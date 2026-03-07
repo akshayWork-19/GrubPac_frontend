@@ -1,16 +1,45 @@
-# React + Vite
+# GrubPac Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Room Booking interface built with React and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Real-time Availability Check
+- Interactive Booking Form
+- User Dashboard & Authentication Flow
+- Responsive Design with Glassmorphism
+- SPA Routing Support
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **React 19**: UI Library
+- **Vite**: Build Tool
+- **Axios**: API Requests
+- **React Router DOM**: Navigation
 
-## React Compiler
+## ⚙️ Local Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+2. **Environment Variables**:
+   Create a `.env` file in the root:
+   ```env
+   VITE_API_BASE_URL=http://localhost:5000/api
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Run Application**:
+   ```bash
+   npm run dev
+   ```
+
+## 🛳️ Deployment (Vercel)
+1. Push to GitHub.
+2. Import project into Vercel.
+3. Add Environment Variable:
+   - `VITE_API_BASE_URL`: `https://your-backend.onrender.com/api` (ensure it ends with `/api`).
+4. The `vercel.json` ensures routes work correctly on refresh.
+
+## 🎨 Design Notes
+- Uses CSS Variables for theme management.
+- Custom scrollbars and hover micro-animations for a premium feel.
